@@ -1,0 +1,7 @@
+{
+  "name": "blankpro",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
