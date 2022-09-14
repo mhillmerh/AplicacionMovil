@@ -8,9 +8,18 @@ const routes: Routes = [
     path: 'tablinks',
     component: TablinksPage,
     children: [
+     
     {
       path: 'varios',
       loadChildren: () => import('../varios/varios.module').then( m => m.VariosPageModule)
+    },
+    {
+      path: 'productos/:id',
+      loadChildren: () => import('../productos/productos.module').then( m => m.ProductosPageModule)
+    },
+    {
+      path: 'contacto',
+      loadChildren: () => import('../contacto/contacto.module').then( m => m.ContactoPageModule)
     },
     {
       path: 'inicio',
@@ -27,12 +36,6 @@ const routes: Routes = [
     {
       path: 'config',
       loadChildren: () => import('../config/config.module').then( m => m.ConfigPageModule)
-    },
-    {
-      path: "",
-      redirectTo: "tablinks/perfil",
-      pathMatch:"full"
-      
     },
     {
       path: 'buscar',

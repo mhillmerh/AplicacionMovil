@@ -7,23 +7,7 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tablinks/tablinks.module').then( m => m.TablinksPageModule)
   },
-  {
-    path: '',
-    redirectTo: 'productos',
-    pathMatch:'full'
-  },
-  {
-    path: 'varios',
-    loadChildren: () => import('./varios/varios.module').then( m => m.VariosPageModule)
-  },
-  {
-    path: 'productos/:id',
-    loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
-  },
-  {
-    path: 'contacto',
-    loadChildren: () => import('./contacto/contacto.module').then( m => m.ContactoPageModule)
-  },
+
 
 ];
 
