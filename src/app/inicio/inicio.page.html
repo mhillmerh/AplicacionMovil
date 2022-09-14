@@ -1,9 +1,145 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>inicio</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu </ion-title>
+        
+        
+      </ion-toolbar>
+    </ion-header>
 
-<ion-content>
+    <ion-content>
+      <ion-list>
+        <ion-list-header> Menu Principal </ion-list-header>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button href="tablinks/inicio">
+            <ion-icon slot="start" name="home"></ion-icon>
+            <ion-label> Home </ion-label>
+          </ion-item>
+          <ion-item button href="tablinks/perfil">
+            <ion-icon slot="start" name="person" ></ion-icon>
+            <ion-label > perfil </ion-label>
+          </ion-item>
+          <ion-item button href="tablinks/config">
+            <ion-icon slot="start" name="cog"></ion-icon>
+            <ion-label> Configuracion </ion-label>
+          </ion-item>          
+          <ion-item button>
+            <ion-icon slot="start" name="back"></ion-icon>
+            <ion-label> Atras... </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
 
-</ion-content>
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-icon name="cart-outline" slot="start"></ion-icon>
+        <ion-title>Inicio</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+<!-- Sebastian sigui aca -->
+    <ion-content class="ion-padding">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Compra para tu Perruno</ion-card-title>
+          <img src="https://i.pinimg.com/564x/3e/25/6e/3e256e3c36ce7068fb1d7f7ebc04493e.jpg" />
+          
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Compra para tu Gatuno</ion-card-title>
+          <img src="https://milesdefondos.com/wp-content/uploads/2021/06/Cats_Black_background_Glance_549260_1080x1920.jpg" />
+          
+        </ion-card-header>
+      </ion-card>
+      <ion-card>
+        <img src="https://www.eltiempo.com/files/image_640_428/uploads/2018/04/06/5ac803f74027f.jpeg" />
+        <ion-card-header>
+          <ion-card-title>Servicios</ion-card-title>
+          <ion-card-subtitle>Colegio, guarderia, paseador, entrenador, y mas servicios increibles</ion-card-subtitle>
+
+        </ion-card-header>
+        
+      </ion-card>
+
+      
+      
+      <ion-card>
+        <ion-card-title>Nuestras Marcas</ion-card-title>
+        <ionic-card>
+          <ion-item href="#" class="ion-activated">
+            <ion-avatar slot="start">
+              <img alt="" src="data:image/png;base64,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" />
+            </ion-avatar>
+            <ion-label>Royal Canin</ion-label>
+          </ion-item>
+        </ionic-card>
+
+        <ionic-card>
+          <ion-item href="#" class="ion-activated">
+            <ion-avatar slot="start">
+              <img alt="" src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0011/9997/brand.gif?itok=r-hKutGo" />
+            </ion-avatar>
+            <ion-label>Eukanuba</ion-label>
+          </ion-item>
+        </ionic-card>
+
+        <ionic-card>
+          <ion-item href="#" class="ion-activated">
+            <ion-avatar slot="start">
+              <img alt="" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/logo_ProPlan.jpg" />
+            </ion-avatar>
+            <ion-label>Pro Plan</ion-label>
+          </ion-item>
+        </ionic-card>
+
+        <ionic-card>
+          <ion-item href="#" class="ion-activated">
+            <ion-avatar slot="start">
+              <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEx11scx9j1uS-4NQgrkypiWOvq826JWjUeHEXsCEA38ofkdlfYOFtnBKtu1El-6oFma8&usqp=CAU" />
+            </ion-avatar>
+            <ion-label>Arcana</ion-label>
+          </ion-item>
+        </ionic-card>
+
+        <ionic-card>
+          <ion-item href="#" class="ion-activated">
+            <ion-avatar slot="start">
+              <img alt="" src="https://www.zoomalia.com/marque_img/1485/bravery-logo-marque-zoomalia.jpeg" />
+            </ion-avatar>
+            <ion-label>Bravery</ion-label>
+          </ion-item>
+        </ionic-card>
+
+      </ion-card>
+      
+      <ion-card>
+        <ion-card>
+          <ion-card-title>Life Animal tips</ion-card-title>
+          <img src="https://pbs.twimg.com/media/DsP4RXOUwAAQfF0.jpg" />
+          <ion-card-header>
+            
+            <ion-card-subtitle>Colegio, guarderia, paseador, entrenador, y mas servicios increibles</ion-card-subtitle>
+  
+          </ion-card-header>
+          
+        </ion-card>
+
+      </ion-card>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>
