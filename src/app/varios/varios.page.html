@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let character of characters" [routerLink]="['/productos/' + character.id]">
+    <ion-item *ngFor="let character of characters" [routerLink]="['tablinks/productos/' + character.id]">
       <ion-avatar slot="start">
         <img src="{{character.image}}" alt="">
 
