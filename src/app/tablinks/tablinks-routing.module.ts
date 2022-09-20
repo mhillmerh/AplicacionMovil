@@ -41,6 +41,10 @@ const routes: Routes = [
       path: 'buscar',
       loadChildren: () => import('../buscar/buscar.module').then( m => m.BuscarPageModule)
     },
+    {
+      path: 'menu-tabs',
+      loadChildren: () => import('../menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
+    },
   ]
   },
   {
