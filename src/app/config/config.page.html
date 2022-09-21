@@ -1,9 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>config</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-menu content-id="cart-content">
+      <ion-header>
+        <ion-toolbar color="">                        
+        </ion-toolbar>
+      </ion-header>  
+
+    <ion-content>        
+        <ion-list>
+          <ion-list-header> Carrito </ion-list-header>
+            <ion-menu-toggle auto-hide="false">                        
+              <ion-item button>
+                <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>
+                <ion-label> Atras... </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+        </ion-list> 
+    </ion-content>
+  </ion-menu>
+  
+<ion-page class="ion-page" id="cart-content">
+  <ion-header>
+    <ion-toolbar>
+       <ion-buttons slot="end">
+        <ion-menu-toggle>
+          <ion-button>
+             <ion-icon slot="icon-only" name="cart-outline"></ion-icon>              
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>  
+      <ion-title>Configuracion</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let place of places">
+      <ion-avatar slot="start">
+        <ion-img [src]="place.imageURL"> </ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{place.title}}
+      </ion-label>
+
+    
+
+    </ion-item>
+  </ion-list>
 
 </ion-content>

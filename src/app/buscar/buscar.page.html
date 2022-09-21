@@ -1,0 +1,66 @@
+<ion-app>
+  <ion-menu content-id="cart-content">
+      <ion-header>
+        <ion-toolbar color="">                        
+        </ion-toolbar>
+      </ion-header>  
+
+    <ion-content>        
+        <ion-list>
+          <ion-list-header> Carrito </ion-list-header>
+            <ion-menu-toggle auto-hide="false">                        
+              <ion-item button>
+                <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>
+                <ion-label> Atras... </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+        </ion-list> 
+    </ion-content>
+  </ion-menu>
+  
+<ion-page class="ion-page" id="cart-content">
+  <ion-header>
+    <ion-toolbar>
+       <ion-buttons slot="end">
+        <ion-menu-toggle>
+          <ion-button>
+             <ion-icon slot="icon-only" name="cart-outline"></ion-icon>              
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons> 
+        <ion-title>Buscar</ion-title>
+      </ion-toolbar>
+    </ion-header>
+<ion-searchbar show-clear-button="focus" clear-icon="trash-bin" placeholder="Buscar"></ion-searchbar>
+
+<ion-content>
+  <ion-card>
+    <img src="https://i.pinimg.com/564x/3e/25/6e/3e256e3c36ce7068fb1d7f7ebc04493e.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+    
+  </ion-card>
+
+  <!-- fab placed to the bottom start -->
+  <!--<ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="dark">
+      <ion-icon md="caret-up" ios="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>-->
+
+
+</ion-content>
+
