@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-tabs.page.scss'],
 })
 export class MenuTabsPage implements OnInit {
+  
 
   constructor() { }
 

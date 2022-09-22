@@ -13,9 +13,3 @@ export class TablinksPage implements OnInit {
   }
 
 }
-
-function openSideMenu() {
-  this.menuCtrl.toggle('left');
-  return './tablinks/menu-tabs.page.html';
-}
-

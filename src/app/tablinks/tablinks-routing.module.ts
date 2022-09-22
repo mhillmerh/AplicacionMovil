@@ -14,6 +14,10 @@ const routes: Routes = [
       loadChildren: () => import('../varios/varios.module').then( m => m.VariosPageModule)
     },
     {
+      path: 'menu-tabs',
+      loadChildren: () => import('../menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
+    }, 
+    {
       path: 'productos/:id',
       loadChildren: () => import('../productos/productos.module').then( m => m.ProductosPageModule)
     },
@@ -40,10 +44,6 @@ const routes: Routes = [
     {
       path: 'buscar',
       loadChildren: () => import('../buscar/buscar.module').then( m => m.BuscarPageModule)
-    },
-    {
-      path: 'menu-tabs',
-      loadChildren: () => import('../menu-tabs/menu-tabs.module').then( m => m.MenuTabsPageModule)
     },
   ]
   },
