@@ -23,7 +23,8 @@ export class imageSlider{
     speed: 400,
     loop: true,
     autoplay: {
-          delay: 400
+          delay: 400,
+          reverseDirection: true
     }
   };
   constructor() {}
