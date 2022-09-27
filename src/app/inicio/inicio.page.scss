@@ -1,6 +1,6 @@
 .ion-label{
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: 33px;
 }
 
@@ -9,8 +9,11 @@
     height: 35px;
     border-radius: 6px;
     border-width: 200px;
-    text-align: end;
-    color:#fff;
+    text-align:start;
     
-    
+       
+}
+
+.list-header{
+    color: #000;
 }
