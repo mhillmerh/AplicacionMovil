@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 
 @Component({
@@ -9,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
   
 
-  constructor() { }
+  constructor(private mibasededatos : Storage) { 
 
-  ngOnInit() {
+
+
+  }
+
+  async ngOnInit() {
+    let obj = {
+      articulo: "pelota de futbol",
+      precio: 200,
+      fecha: new Date()
+    }
+    await this.mibasededatos.set("articulo", obj);
+
+
   }
   
  
